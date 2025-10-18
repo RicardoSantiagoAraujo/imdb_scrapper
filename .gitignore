@@ -1,0 +1,110 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+
+# Virtualenv
+venv/
+ENV/
+env/
+*.env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Pytest
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Cython
+*.c
+*.so
+
+# Pyre type checker
+.pyre/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pylint
+.pylint.d/
+
+# Flake8
+.flake8
+
+# Docker
+.docker/
+
+# Local environment files
+.env
+.env.*
+*.envrc
+
+# VS Code extensions (optional)
+.vscode/extensions.json
+
+# MacOS Finder files
+.DS_Store
+
+# Thumbs.db (Windows)
+Thumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Node.js (if using Node in your project)
+node_modules/
+
+# Coverage files
+.coverage
+*.coveragerc
+
+# System Files
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Test output
+test_output/
+
+# Flask/Django settings (if applicable)
+instance/
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# Backup and temporary files
+*.bak
+*.swp
+
+# Logs
+*.log
+
+# macOS, Linux, and Windows system files
+Desktop.ini
+ehthumbs.db
+
+*.csv
