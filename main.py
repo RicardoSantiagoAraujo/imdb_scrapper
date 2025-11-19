@@ -27,18 +27,18 @@ def main():
     scraped_data = []
 
     # How many rows to scrap
-    startAt=1759
+    startAt=0
     stopAt= len(pages)
     # stopAt= 6
 
     for count, row in pages.iloc[startAt:stopAt].iterrows():
-        print(f"Processing {count + 1}/{stopAt}: {row['Title']} ({row['Const']}) : {row['URL']}")
+        print(f"Processing {count + 1}/{stopAt} ({count+1-startAt}/{stopAt-startAt}): {row['Title']} ({row['Const']}) : {row['URL']}")
         if row["Const"] in existing_rows["Const"].values:
             print("\t [yellow]Entry already scraped. Skipping row.[/yellow]\n")
             continue
         film_data = utils.scrape_film_data(row)
         scraped_data.append(film_data)
-        print("\t [green]Entry added.[/green]\n")
+        print(f"\t [green]Entry added. {(count+1-startAt)/(stopAt-startAt)*100}% done! [/green]\n")
 
     if len(scraped_data)== 0:
         print("\n[yellow] No new entries added. Terminating.[/yellow]")
