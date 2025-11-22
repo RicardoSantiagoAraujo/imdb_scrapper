@@ -1,7 +1,7 @@
 
 # Rows to scrap
 startAt=0
-stopAt= 1 # IF None, IT WILL GO TILL END OF FILE
+stopAt= None # IF None, IT WILL GO TILL END OF FILE
 save_every_n_rows = 10 # Save progress every N rows in case of crash during long runs
 
 

@@ -152,9 +152,12 @@ def scrape_mpaa_rating(page_html):
     Returns:
         str: The MPAA rating, or pd.NA if not found.
     """
-    el = page_html.find('section', {'data-testid': 'content-rating'}).find('div', {'role': 'presentation'})
-    print(el)
-    return el.text if el else pd.NA
+    el = page_html.find('section', {'data-testid': 'content-rating'})
+    if el:
+        el = el.find('div', {'role': 'presentation'})
+        if el:
+            return el.text
+    return  pd.NA
 
 def scrape_technical_details(page_html, spec_id, html_tag):
     """
